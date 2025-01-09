@@ -91,6 +91,8 @@ We'll start by creating a simple Header component. This component will display a
 2. **Understanding the Component Structure**:
    - Components are JavaScript functions that return JSX
    - They must import necessary items from 'react-native'
+   - This component uses the `View` and the `Text` components.
+   - `View` is the equivalent of a `div` and `Text` is the equivalent of a `p`
    - They must return a single parent element
    - They should be exported to use in other files
 
