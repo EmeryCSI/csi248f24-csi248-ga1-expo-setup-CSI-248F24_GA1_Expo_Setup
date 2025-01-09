@@ -170,9 +170,28 @@ Without props, components would be static and show the same thing every time. Pr
 
 ### Making Our Header Dynamic with Props
 
-Let's modify our Header component to accept and use props. We'll change it from showing fixed text to showing whatever text we pass to it.
+Now that we have our Header component displaying in our app, let's make it dynamic using props. Currently, our Header shows the same hardcoded text every time. Let's modify our App.js to pass different text to our Header component:
 
-Update `src/components/Header.js`:
+```javascript
+// App.js
+import { View } from 'react-native';
+import Header from './src/components/Header';
+
+export default function App() {
+  return (
+    <View>
+      {/* Pass props to our Header component */}
+      <Header 
+        name="Sarah Wilson" 
+        title="React Native Developer" 
+      />
+    </View>
+  );
+}
+```
+
+Let's update our Header component to accept and use these props. In `src/components/Header.js`:
+
 ```javascript
 // src/components/Header.js
 import { View, Text } from 'react-native';
@@ -192,6 +211,21 @@ const Header = (props) => {
 
 export default Header;
 ```
+
+Let's break down what's happening:
+1. In App.js, we add properties to our Header component:
+   - `name="Sarah Wilson"` passes a name prop
+   - `title="React Native Developer"` passes a title prop
+2. In Header.js:
+   - The component receives props as a parameter
+   - We destructure `name` and `title` from props
+   - We use these values inside our Text components with curly braces: `{name}`
+
+When you run the app now, you should see:
+- Sarah Wilson
+- React Native Developer
+
+These values are coming from the props we passed in App.js!
 
 ## Part 3: Building a Simple Resume
 
