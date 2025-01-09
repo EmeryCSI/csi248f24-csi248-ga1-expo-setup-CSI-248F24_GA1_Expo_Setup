@@ -442,12 +442,11 @@ const Counter = () => {
 2. Props pass data down from parent to child
 3. State manages data that changes within a component
 4. useState is the hook for managing state in functional components
-13. Our Dark mode should be working across all of our components.
-14. If you needed a dark/light mode theme beyond just a few components you may want to use a global state container.
-15. Take a screenshot of your final functioning app add it to the screenshots folder.
-16. `git add .`
-17. `git commit -m "Assignment Complete"`
-18. `git push`
+
+## When complete, Push to git
+`git add .`
+`git commit -m "Assignment Complete"`
+`git push`
 
 If you have any questions about this assignment please reach out to myself or our TA for this course.
 https://expo.dev/
