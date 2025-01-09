@@ -444,11 +444,9 @@ const Counter = () => {
 4. useState is the hook for managing state in functional components
 
 ## When complete, Push to git
-`git add .`
-
-`git commit -m "Assignment Complete"`
-
-`git push`
+- `git add .`
+- `git commit -m "Assignment Complete"`
+- `git push`
 
 
 If you have any questions about this assignment please reach out to myself or our TA for this course.
