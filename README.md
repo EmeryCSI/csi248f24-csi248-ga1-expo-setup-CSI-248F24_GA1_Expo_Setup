@@ -297,7 +297,7 @@ export default function App() {
 
 ## Part 4: Basic Styling
 
-React Native uses JavaScript objects for styling. StyleSheet.create() helps optimize styles and provides better error checking.
+React Native uses JavaScript objects for styling. StyleSheet.create() helps optimize styles and provides better error checking. Lets add some styling to our header.
 
 ```javascript
 // Example with styles
@@ -331,6 +331,8 @@ const styles = StyleSheet.create({
 
 export default Header;
 ```
+
+Add some styling to the Experience and Contact components.
 
 ## Part 5: Understanding State
 
@@ -432,8 +434,7 @@ const Counter = () => {
 
 1. Add a Skills component that takes an array of skills as props
 2. Add a reset button to the Counter component
-3. Try combining props and state in a new component
-4. Add a toggle button that shows/hides contact information
+
 
 ## Key Takeaways
 
