@@ -42,11 +42,21 @@ Let's break down each step of our setup process:
    npx npx create-expo-app --template blank basic-resume
    ```
 
-2. **Navigate into the project directory**:
+2. **Installing the Expo Web packages and running the project**:
    - Change into the newly created project folder
    ```bash
    cd basic-resume
    ```
+   - In order to run a React Native project in the web browser we must install the following packages via the terminal.
+   ```bash
+   npx expo install react-dom react-native-web @expo/metro-runtime
+   ```
+   - Now we are ready to run the project 
+   ```bash
+   npx expo start
+   ```
+   - Hit W to launch the project in your browser
+   - Scan the QR code with your Expo GO app to launch the app in your smartphone. Your smartphone and your laptop MUST be on the same wireless network for this to work.
 
 3. **Set up a proper project structure**:
    - Create a `src` folder to organize our source code
