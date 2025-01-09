@@ -36,10 +36,10 @@ Before we dive into components, props, and state, we need to set up our developm
 Let's break down each step of our setup process:
 
 1. **Create a new Expo project**:
-   - We'll use `npx create-expo-app` which creates a new React Native project with Expo
+   - We'll use `npx create-expo-app --template blank` which creates a new React Native project with Expo
    - `basic-resume` will be our project name
    ```bash
-   npx create-expo-app basic-resume
+   npx npx create-expo-app --template blank basic-resume
    ```
 
 2. **Navigate into the project directory**:
