@@ -445,8 +445,11 @@ const Counter = () => {
 
 ## When complete, Push to git
 `git add .`
+
 `git commit -m "Assignment Complete"`
+
 `git push`
 
+
 If you have any questions about this assignment please reach out to myself or our TA for this course.
-https://expo.dev/
+https://reactnative.dev/docs/intro-react-native-components
