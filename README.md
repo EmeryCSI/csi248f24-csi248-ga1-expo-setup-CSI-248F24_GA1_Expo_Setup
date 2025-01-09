@@ -113,6 +113,44 @@ const Header = () => {
 
 export default Header;
 ```
+Using Our Header Component
+
+Now that we've created our Header component, let's use it in our app. To do this, we need to:
+1. Import the Header component into App.js
+2. Add it to our app's JSX
+
+Here's how we update our App.js:
+
+```javascript
+// App.js
+import { View } from 'react-native';
+// Import our Header component
+import Header from './src/components/Header';
+
+export default function App() {
+  return (
+    <View>
+      {/* Use our Header component */}
+      <Header />
+    </View>
+  );
+}
+```
+
+Let's break down what's happening in App.js:
+1. We import `View` from react-native (just like in our Header)
+2. We import our Header component using a relative path
+   - './src' means "start from the current folder and go into src"
+   - '/components' means "then go into the components folder"
+   - '/Header' refers to our Header.js file
+3. We use our Header component like an HTML tag: `<Header />`
+4. Just like our Header, App.js needs a single parent element (`View`)
+
+When you run your app now (using `npm start` or `expo start`), you should see:
+- John Doe
+- Software Developer
+
+This text comes from our Header component!
 
 ## Part 2: Understanding and Using Props
 
